@@ -1,0 +1,3860 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Subscribers</title>
+
+
+    <link rel="shortcut icon" type="image/png" href="https://assets.mailerlite.com/images/favicon-32x32.png">
+
+
+
+
+<meta name="keywords" content="Latin American Women&#039;s Aid Newsletter">
+<meta name="description" content="Format">
+
+    <meta name="robots" content="index, follow">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="subscribepage.io/ch2F2L">
+
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://assets.mlcdn.com/ml/bootstrap/css/bootstrap-4.3.1.min.css">
+
+
+<script src="https://assets.mlcdn.com/ml/jquery/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://assets.mlcdn.com/ml/bootstrap/js/bootstrap-4.3.1.min.js"></script>
+
+<script src="https://kit.fontawesome.com/0f54bd8811.js"></script>
+
+
+
+  <link rel="stylesheet" href="#">
+  
+
+
+
+<style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1667224");</style>
+
+
+<script src="https://cdn.mailerlite.com/moment/moment.min.js"></script>
+<script src="https://cdn.mailerlite.com/moment-timezone/moment-timezone-with-data.min.js"></script>
+
+<script>
+  var previousTimeZone = [];
+  var updatingTimer = false;
+
+	function timers(newDate) {
+    updatingTimer = true;
+
+		setTimeout(function(){
+			$('.countdown').each(function() {
+        var id = $(this).attr('id');
+        var selected_zone = $(this).attr('data-zone');
+        var zone = $(this).attr('data-' + selected_zone);
+
+        if (typeof previousTimeZone[id] === 'undefined') {
+          previousTimeZone[id] = zone;
+        }
+
+        // init countdown timer || || endTime changed || zone changed
+        if(!$(this).data('countdown-bound') || newDate || previousTimeZone[id] !== zone) {
+          previousTimeZone[id] = zone;
+          $(this).data('countdown-bound', true);
+
+          var endTime = newDate || $(this).attr('data-date');
+          var endTimeUTC = getUTC(endTime, zone);
+
+          initializeClock(id, endTimeUTC);
+        }
+
+			});
+      updatingTimer = false;
+		});
+	}
+
+	function getUTC(endTime, zone){
+	  var moment = window.moment;
+    try {
+      moment = window.top && window.top.moment;
+    } catch (err) { }
+    var format = 'YYYY-MM-DD HH:mm:ss';
+    if (moment.tz && zone) {
+      var date = moment.tz(endTime, zone);
+      date = date.tz ? date.tz("UTC") : date;
+    } else {
+      var date = moment(endTime, format);
+      date = (zone && date.tz) ? date.tz(zone) : date;
+    }
+    return date.format(format);
+  }
+
+	$(document).ready(function () {
+		timers();
+
+        $('body').on('DOMNodeInserted',function(e) {
+            if (! updatingTimer) {
+              timers();
+            }
+        });
+	});
+
+	function getTimeRemaining(endtime) {
+        endtime = endtime.replace(' ', 'T') + 'Z';
+        var currentTime = new Date();
+        var currentUTC = Date.parse(currentTime.toUTCString());
+        if (!endtime || Number.isNaN(Date.parse(endtime))) {
+            endtime = currentUTC;
+        }
+        var t = Date.parse(endtime) - currentUTC;
+		var seconds = Math.floor((t / 1000) % 60);
+		var minutes = Math.floor((t / 1000 / 60) % 60);
+		var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+		var days = Math.floor(t / (1000 * 60 * 60 * 24));
+		return {
+			'total': t,
+			'days': days,
+			'hours': hours,
+			'minutes': minutes,
+			'seconds': seconds
+		};
+	}
+
+	function initializeClock (id, endtime) {
+		var clock = document.getElementById(id);
+		var daysSpan = clock.querySelector('.days');
+		var hoursSpan = clock.querySelector('.hours');
+		var minutesSpan = clock.querySelector('.minutes');
+		var secondsSpan = clock.querySelector('.seconds');
+
+		function updateClock() {
+			var t = getTimeRemaining(endtime);
+
+			daysSpan.innerHTML = t.days;
+			hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+			minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+			secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+			if (t.total <= 0) {
+				daysSpan.innerHTML = '00';
+				hoursSpan.innerHTML = '00';
+				minutesSpan.innerHTML = '00';
+				secondsSpan.innerHTML = '00';
+			}
+		}
+
+		updateClock();
+
+		if (window['timerinterval' + id]) {
+			clearInterval(window['timerinterval' + id]);
+		}
+
+		window['timerinterval' + id] = setInterval(updateClock, 1000);
+	}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
+
+<script>
+  (function($) {
+    window.addEventListener('DOMContentLoaded', function() {
+        $('.ml-gallery').length && baguetteBox && baguetteBox.run('.ml-gallery');
+    })
+  })(jQuery);
+</script>
+
+
+
+<style type="text/css">
+        .ml-notification {
+            text-align: center;
+            margin-bottom: 0;
+            border-radius: 0;
+            background-color: #eeeeee;
+            border-bottom: 1px solid #cccccc;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            z-index: 1000;
+        }
+        .ml-notification.box {
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          right: auto;
+          flex-direction: column;
+          display: flex;
+          max-width: 340px;
+          border-radius: 4px;
+          border: 1px solid #cccccc;
+        }
+        .ml-notification.box.right {
+          right: 20px;
+          left: auto;
+        }
+                @media only screen and (max-width: 480px) {
+          .ml-notification.box {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            max-width: 100%;
+            border-radius: 0!important;
+          }
+        }
+        .ml-notification.bottom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top:auto;
+            z-index: 1;
+        }
+        
+        /* Text and link */
+        .ml-notification .text-block {
+            padding: 6px 0;
+        }
+        .ml-notification .text-block p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727373;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 10px;
+        }
+        .ml-notification .text-block p:last-child {
+            margin-bottom: 0;
+        }
+        .ml-notification .text-block p a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        /* Button */
+        .ml-notification .button-block {
+            padding: 2px 0;
+        }
+        .ml-notification .button-block .btn-one {
+            width: auto;
+            display: inline-block;
+            font-family:'Open Sans', Arial, Helvetica, sans-serif;
+            background-color:#8e44ad;
+            font-size:14px;
+            
+            
+            
+            
+            color:#ffffff;
+            border-radius:30px;
+            padding:5px 15px!important;
+            font-weight: bold; font-style: normal; text-decoration: none;
+        }
+        .ml-notification .button-block .btn-one:hover, .ml-notification .button-block .btn-one:focus, .ml-notification .button-block .btn-one:active, .ml-notification .button-block .btn-one:active:hover {
+            background-color:#1830ed;
+            
+            
+            
+            
+            color:#ffffff;
+            font-weight: bold; font-style: normal; text-decoration: none;
+        }
+
+        /* Button 2 */
+
+        .ml-notification .button-block .btn-two {
+            width: auto;
+            display: inline-block;
+            font-family:'Open Sans', Arial, Helvetica, sans-serif;
+            background-color:#ffffff;
+            font-size:14px;
+            border-top:1px solid #2B44FF;
+            border-bottom:1px solid #2B44FF;
+            border-left:1px solid #2B44FF;
+            border-right:1px solid #2B44FF;
+            color:#1830ed;
+            border-radius:30px;
+            padding:5px 15px!important;
+            font-weight: bold; font-style: normal; text-decoration: none;
+        }
+        .ml-notification .button-block .btn-two:hover, .ml-notification .button-block .btn-two:focus, .ml-notification .button-block .btn-two:active, .ml-notification .button-block .btn-two:active:hover {
+            background-color:#1830ed;
+            border-top:1px solid #1830ed;
+            border-bottom:1px solid #1830ed;
+            border-left:1px solid #1830ed;
+            border-right:1px solid #1830ed;
+            color:#ffffff;
+            font-weight: bold; font-style: normal; text-decoration: none;
+        }
+    </style><style>
+      /* BS fix for too big height */
+      .flex-column .col-1, .flex-column .col-2, .flex-column .col-3, .flex-column .col-4, .flex-column .col-5, .flex-column .col-6, .flex-column .col-7, .flex-column .col-8, .flex-column .col-9, .flex-column .col-10, .flex-column .col-11, .flex-column .col-12  {
+        flex-basis: auto;
+      }
+    </style><style>
+
+      .skip-link {
+        background: #000;
+        height: 30px;
+        left: 50%;
+        padding: 8px;
+        position: absolute;
+        transform: translateY(-1000%);
+        transition: transform 0.3s;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .skip-link:focus {
+        transform: translateY(-50%);
+      }
+
+      .navbar-toggler {
+        color: rgba(0, 0, 0, 0) !important;
+        border-color: rgba(0, 0, 0, 0) !important;
+      }
+
+      .navbar-toggler-icon {
+        background-image: none !important;
+      }
+
+      .navbar-toggler-icon {
+        background-image: none;
+        border-bottom: 1px solid #666666;
+        height: 17px;
+        position: relative;
+        transition: all 300ms linear;
+        width: 24px;
+      }
+
+      .navbar-toggler-icon:after,
+      .navbar-toggler-icon:before {
+        background-color: #666666;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: all 300ms linear;
+        width: 24px;
+        z-index: 2;
+      }
+
+      .navbar-toggler-icon:after {
+        top: 8px;
+      }
+
+      .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+        transform: rotate(45deg);
+      }
+
+      .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+        transform: translateY(8px) rotate(-45deg);
+      }
+
+      .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        border-color: transparent;
+      }
+
+    </style><style type="text/css">
+
+      header .navbar-brand,
+      header .navbar-light .navbar-brand {
+        font-family: 'Cabin', sans-serif;
+        color:#8e44ad;
+        font-size:21px;
+        font-weight: bold; font-style: normal; text-decoration: none;
+        letter-spacing: 0px;
+        margin-bottom: 0;
+      }
+      header .navbar-brand:hover,
+      header .navbar-light .navbar-brand:hover {
+      color:#8e44ad;
+      }
+
+    </style><style>
+
+      /*header.active {*/
+      /*  background: #ffffff;*/
+      /*}*/
+      header {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background-color: transparent;
+        border-bottom: 0px solid  #cccccc;
+        -webkit-transition : all 0.3s ease-out;
+        transition : all 0.3s ease-out;
+        box-shadow: none;
+        position: relative;
+        z-index: 1;
+      }
+
+      header .navbar {
+        padding: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+
+      header .navbar .navbar-brand img {
+        height: 25px;
+      }
+
+      @media (min-width: 768px) {
+        header .navbar-nav .nav-item {
+          padding-left: 10px;
+          padding-right:  10px;
+        }
+
+        header .navbar-nav .nav-item:first-child {
+          padding-left: 0;
+        }
+
+        header .navbar-nav .nav-item:last-child {
+          padding-right: 0;
+        }
+
+      }
+      @media (max-width: 768px) {
+        header{
+          max-height: 100vh;
+          overflow-y: scroll;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+        header::-webkit-scrollbar {
+          width: 0;
+          background: transparent;
+        }
+      }
+
+      header .navbar .nav-item a {
+
+        font-family: 'Merriweather', serif;
+        color: #666666!important;
+        font-size: 14px!important;
+        -webkit-transition : all 0.3s ease-out;
+        transition : all 0.3s ease-out;
+        border-bottom: 1px solid rgba(225,225,225,0);
+        font-weight: normal; font-style: normal; text-decoration: none;
+
+      }
+
+      header .navbar .nav-item a:hover {
+
+        color: #666666!important;
+        -webkit-transition : all 0.3s ease-out;
+        transition : all 0.3s ease-out;
+        border-bottom: 1px solid #666666;
+
+      }
+
+      header .navbar .btn-block {
+        width: auto;
+        display: inline-block;
+        font-family:'Open Sans', Arial, Helvetica, sans-serif;
+        background-color:#8e44ad;
+        font-size:13px;
+        
+        
+        
+        
+        color:#ffffff;
+        border-radius:30px;
+        padding:12px 40px!important;
+        font-weight: bold; font-style: normal; text-decoration: none;
+      }
+
+      header .navbar .btn-block:hover,
+      header .navbar .btn-block:focus,
+      header .navbar .btn-block:active,
+      header .navbar .btn-block:active:hover {
+        background-color:#1830ed;
+        
+        
+        
+        
+        color:#ffffff;
+        font-weight: bold; font-style: normal; text-decoration: none;
+      }
+    </style><style type="text/css">
+
+  .container-fluid.ml-lp-5 {
+
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: #ffffff;
+
+  }
+
+</style><style type="text/css">
+                        .image-block-8 img {
+                                                    max-width: 100%;
+                                                  }
+                      </style><style type="text/css">
+
+  .container-fluid.ml-lp-7 {
+
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: #9b59b6;
+
+  }
+
+</style><style type="text/css">
+  /* Button */
+  .ml-lp-7 .button-block {
+  text-align: left;
+  }
+  .ml-lp-7 .btn-block+.btn-block {
+                        margin-top: 0;
+                      }
+  .ml-lp-7 .button-block .btn-block {
+  width: auto;
+  display: inline-block;
+  font-family:'Merriweather', serif;
+  background-color:#09c269;
+  font-size:14px;
+  line-height:21px;
+  
+  
+  
+  
+  color:#ffffff;
+  border-radius:30px!important;
+  padding:13px 40px!important;
+  font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-7 .button-block .btn-block:hover, .ml-lp-7 .button-block .btn-block:focus, .ml-lp-7 .button-block .btn-block:active, .ml-lp-7 .button-block .btn-block:active:hover {
+  background-color:#1830ed;
+  
+  
+  
+  
+  color:#ffffff;
+  font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .ml-lp-7 .button-block .btn-block {
+                          width: 100%!important;
+                        }
+  }
+
+  /* Input */
+  .ml-lp-7 .form-group .form-control,
+                      .ml-lp-7 .form-group .custom-select {
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  border-radius: 30px!important;
+  font-size: 11px;
+  line-height:21px;
+  color: #000000;
+  border: 1px solid #ffffff;
+  padding-top:13px!important;
+  padding-bottom:13px!important;
+  height: auto;
+  }
+
+  .ml-lp-7 .form-group.ml-error .form-control,
+  .ml-lp-7 .input-group.ml-error .form-control,
+  .ml-lp-7 .form-group.ml-error .custom-select {
+    border-color: red!important;
+  }
+
+  .ml-lp-7 .form-group.ml-error .custom-checkbox-radio-list {
+    border-radius: 30px!important;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-color: red!important;
+  }
+
+  .ml-lp-7 .form-group .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #666666;
+  opacity: 1; /* Firefox */
+  }
+  .ml-lp-7 .form-group .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #666666;
+  }
+  .ml-lp-7 .form-group .form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: #666666;
+  }
+
+  @media (max-width: 768px) {
+    .ml-lp-7 .input-group .input-group-append {
+                          float: left !important;
+                          margin-top: 15px !important;
+                          width: 100%!important;
+                          margin-left: 0 !important;
+                        }
+  }
+
+
+  /* Checkbox */
+  .ml-lp-7 .form-group .custom-control-label,
+                      .ml-lp-7 .form-group .custom-control-label p,
+                                          .ml-lp-7 .form-group .custom-control-privacy-policy p {
+  color: #000000;
+  font-size: 12px!important;
+  font-family: 'Merriweather', serif;
+  line-height: 22px;
+  font-weight: normal; font-style: normal; text-decoration: none;
+  margin-bottom: 0
+  }
+  .ml-lp-7 .form-group.ml-error .custom-control-label p {
+                        color: red;
+                      }
+
+  .ml-lp-7 .form-group.ml-error .field-title {
+                        color: red;
+                      }
+
+  .ml-error .label-description,
+  .ml-error .label-description p,
+  .ml-error .label-description p a,
+  .ml-error label:first-child {
+    color: #ff0000 !important;
+  }
+
+  .ml-lp-7 .form-group .custom-control-label a,
+                      .ml-lp-7 .form-group .custom-control-privacy-policy a {
+  color:#000000;
+  text-decoration: underline;
+  }
+
+  .ml-lp-7 .custom-checkbox .custom-control-label::before,
+                      .ml-lp-7 .custom-radio .custom-control-label::before {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  }
+  .ml-lp-7 .custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+                      .ml-lp-7 .custom-radio .custom-control-input:checked~.custom-control-label::before {
+  border-color: #09c269;
+  background-color: #09c269;
+  color: #ffffff;
+  }
+  /* Checkbox position fix */
+  .ml-lp-7 .custom-checkbox .custom-control-label::before, .ml-lp-7 .custom-checkbox .custom-control-label::after,
+                                                                                          .ml-lp-7 .custom-radio .custom-control-label::before, .ml-lp-7 .custom-radio .custom-control-label::after {
+  top: 4px;
+  }
+
+  /* Label */
+  .ml-lp-7 .form-group label {
+                        margin-bottom: 3px;
+  color: #000000;
+  font-size: 14px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold; font-style: normal; text-decoration: none;
+  }
+
+  /* Label Desciption */
+  .ml-lp-7 .form-group .custom-control-label .description {
+                        margin-top: 5px;
+  color: #111111;
+  font-size: 12px;
+  font-family: 'Merriweather', serif;
+  font-weight: normal; font-style: normal; text-decoration: none;
+  }
+
+  /* GDPR Title */
+  .ml-lp-7 .form-group-gdpr h4 {
+  color: #111111;
+  font-size: 13px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold; font-style: normal; text-decoration: none;
+  }
+
+  /* GDPR Text */
+  .ml-lp-7 .form-group-gdpr p {
+  color: #111111;
+  font-size: 12px!important;
+  font-family: 'Merriweather', serif;
+  line-height:  22px;
+  font-weight: normal; font-style: normal; text-decoration: none;
+  }
+
+  /* GDPR Text Link */
+  .ml-lp-7 .form-group-gdpr p a {
+  color: #111111;
+  }
+
+  .ml-form-recaptcha {
+    float: left;
+  }
+  .ml-form-recaptcha.ml-error iframe {
+    border: solid 1px #ff0000;
+  }
+  @media screen and (max-width: 768px) {
+    .ml-form-recaptcha {
+      transform: scale(0.77);
+      -webkit-transform: scale(0.77);
+      transform-origin: 0 0;
+      -webkit-transform-origin: 0 0;
+    }
+  }
+</style><style type="text/css">
+        .form-hidden {
+          display: none;
+        }
+
+        .image-block-7 img {
+                                    max-width: 100%;
+                                  }
+      </style><style type="text/css">
+  .ml-lp-7 h1 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:30px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+    font-weight: normal; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-7 h2 {
+    font-family: 'Merriweather', serif;
+    color:#ffffff;
+    font-size:40px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+    font-weight: bold; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-7 h3 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:20px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+  }
+  .ml-lp-7 blockquote {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    padding-left: 1em;
+    border-left: 0.2em solid #ffffff;
+  }
+  .ml-lp-7 blockquote:before,
+  .ml-lp-7 blockquote:after {
+    content: '\201C';
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+  }
+  .ml-lp-7 blockquote:after {
+    content: '\201D';
+  }
+  .ml-lp-7 p,
+  .ml-lp-7 ul,
+  .ml-lp-7 ol {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    line-height: 150%!important;
+  }
+  .ml-lp-7 p:last-child,
+  .ml-lp-7 ul:last-child,
+  .ml-lp-7 ol:last-child {
+    margin-bottom: 0;
+  }
+  .ml-lp-7 p a,
+  .ml-lp-7 ul a,
+  .ml-lp-7 ol a {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .ml-lp-7 p,
+    .ml-lp-7 ul,
+    .ml-lp-7 ol {
+      font-size: 17px!important;
+    }
+    .ml-lp-7 h1 {
+      font-size: 28px!important;
+    }
+    .ml-lp-7 h2 {
+      font-size: 24px!important;
+    }
+    .ml-lp-7 h3 {
+      font-size: 20px!important;
+    }
+  }
+</style><style type="text/css">
+                        .image-block-21 img {
+                          max-width: 100%;
+                        }
+                      </style><style type="text/css">
+
+  .container-fluid.ml-lp-20 {
+
+    padding-bottom: 30px;
+    padding-top: 40px;
+    background-color: transparent;
+
+  }
+
+</style><style type="text/css">
+
+        .image-block-20 img {
+
+        max-width: 100%;
+
+        }
+
+      </style><style type="text/css">
+  .ml-lp-20 h1 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:30px;
+    letter-spacing: 0px;
+    line-height: 150%!important;
+    font-weight: normal; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-20 h2 {
+    font-family: 'Merriweather', serif;
+    color:#8e44ad;
+    font-size:40px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+    font-weight: bold; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-20 h3 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:20px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+  }
+  .ml-lp-20 blockquote {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #727373;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    padding-left: 1em;
+    border-left: 0.2em solid #727373;
+  }
+  .ml-lp-20 blockquote:before,
+  .ml-lp-20 blockquote:after {
+    content: '\201C';
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #727373;
+  }
+  .ml-lp-20 blockquote:after {
+    content: '\201D';
+  }
+  .ml-lp-20 p,
+  .ml-lp-20 ul,
+  .ml-lp-20 ol {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #727373;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    line-height: 150%!important;
+  }
+  .ml-lp-20 p:last-child,
+  .ml-lp-20 ul:last-child,
+  .ml-lp-20 ol:last-child {
+    margin-bottom: 0;
+  }
+  .ml-lp-20 p a,
+  .ml-lp-20 ul a,
+  .ml-lp-20 ol a {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #727373;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .ml-lp-20 p,
+    .ml-lp-20 ul,
+    .ml-lp-20 ol {
+      font-size: 17px!important;
+    }
+    .ml-lp-20 h1 {
+      font-size: 28px!important;
+    }
+    .ml-lp-20 h2 {
+      font-size: 24px!important;
+    }
+    .ml-lp-20 h3 {
+      font-size: 20px!important;
+    }
+  }
+</style><style type="text/css">
+  .ml-lp-20 .button-block .btn-block {
+    width: auto;
+    display: inline-block;
+    font-family:'Merriweather', serif;
+    background-color:#8e44ad;
+    font-size:14px;
+    
+    
+    
+    
+    color:#ffffff;
+    border-radius:30px;
+    padding:13px 40px!important;
+  font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-20 .button-block .btn-block:hover,
+  .ml-lp-20 .button-block .btn-block:focus,
+  .ml-lp-20 .button-block .btn-block:active,
+  .ml-lp-20 .button-block .btn-block:active:hover {
+    background-color:#1830ed;
+    
+    
+    
+    
+    color:#ffffff;
+    font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-20 .button2-block .btn-block {
+    width: auto;
+    display: inline-block;
+    font-family:'Merriweather', serif;
+    background-color:#ffffff;
+    font-size:14px;
+    border-top:1px solid #2B44FF;
+    border-bottom:1px solid #2B44FF;
+    border-left:1px solid #2B44FF;
+    border-right:1px solid #2B44FF;
+    color:#1830ed;
+    border-radius:30px;
+    padding:13px 40px!important;
+    font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-20 .button2-block .btn-block:hover,
+  .ml-lp-20 .button2-block .btn-block:focus,
+  .ml-lp-20 .button2-block .btn-block:active,
+  .ml-lp-20 .button2-block .btn-block:active:hover {
+    background-color:#1830ed;
+    border-top:1px solid #1830ed;
+    border-bottom:1px solid #1830ed;
+    border-left:1px solid #1830ed;
+    border-right:1px solid #1830ed;
+    color:#ffffff;
+    font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .ml-lp-20 .button-block .btn-block {
+      width: 100%!important;
+    }
+  .ml-lp-20 .button2-block .btn-block {
+      width: 100%!important;
+    }
+  }
+</style><style type="text/css">
+          .image-block-27 img {
+                                      max-width: 100%;
+                                    }
+        </style><style type="text/css">
+
+  .container-fluid.ml-lp-26 {
+
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: #ffffff;
+
+  }
+
+</style><style type="text/css">
+
+  .container-fluid.ml-lp-26 {
+
+    background-image: url('https://local.mlcdn.com/a/0/1/images/6fd74528c432da3a4848c978dc6eeaa66e8fe672.jpeg');
+    background-size:  auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+  }
+
+</style><style type="text/css">
+  .ml-lp-26 h1 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:30px;
+    letter-spacing: 0px;
+    line-height: 150%!important;
+    font-weight: normal; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-26 h2 {
+    font-family: 'Merriweather', serif;
+    color:#8e44ad;
+    font-size:48px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+    font-weight: bold; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-26 h3 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:20px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+  }
+  .ml-lp-26 blockquote {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #727373;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    padding-left: 1em;
+    border-left: 0.2em solid #727373;
+  }
+  .ml-lp-26 blockquote:before,
+  .ml-lp-26 blockquote:after {
+    content: '\201C';
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #727373;
+  }
+  .ml-lp-26 blockquote:after {
+    content: '\201D';
+  }
+  .ml-lp-26 p,
+  .ml-lp-26 ul,
+  .ml-lp-26 ol {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #727373;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    line-height: 150%!important;
+  }
+  .ml-lp-26 p:last-child,
+  .ml-lp-26 ul:last-child,
+  .ml-lp-26 ol:last-child {
+    margin-bottom: 0;
+  }
+  .ml-lp-26 p a,
+  .ml-lp-26 ul a,
+  .ml-lp-26 ol a {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #727373;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .ml-lp-26 p,
+    .ml-lp-26 ul,
+    .ml-lp-26 ol {
+      font-size: 17px!important;
+    }
+    .ml-lp-26 h1 {
+      font-size: 28px!important;
+    }
+    .ml-lp-26 h2 {
+      font-size: 24px!important;
+    }
+    .ml-lp-26 h3 {
+      font-size: 20px!important;
+    }
+  }
+</style><style type="text/css">
+  .ml-lp-26 .button-block .btn-block {
+    width: auto;
+    display: inline-block;
+    font-family:'Merriweather', serif;
+    background-color:#8e44ad;
+    font-size:14px;
+    
+    
+    
+    
+    color:#ffffff;
+    border-radius:30px;
+    padding:13px 40px!important;
+  font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-26 .button-block .btn-block:hover,
+  .ml-lp-26 .button-block .btn-block:focus,
+  .ml-lp-26 .button-block .btn-block:active,
+  .ml-lp-26 .button-block .btn-block:active:hover {
+    background-color:#1830ed;
+    
+    
+    
+    
+    color:#ffffff;
+    font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-26 .button2-block .btn-block {
+    width: auto;
+    display: inline-block;
+    font-family:'Merriweather', serif;
+    background-color:#ffffff;
+    font-size:14px;
+    border-top:1px solid #2B44FF;
+    border-bottom:1px solid #2B44FF;
+    border-left:1px solid #2B44FF;
+    border-right:1px solid #2B44FF;
+    color:#1830ed;
+    border-radius:30px;
+    padding:13px 40px!important;
+    font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-26 .button2-block .btn-block:hover,
+  .ml-lp-26 .button2-block .btn-block:focus,
+  .ml-lp-26 .button2-block .btn-block:active,
+  .ml-lp-26 .button2-block .btn-block:active:hover {
+    background-color:#1830ed;
+    border-top:1px solid #1830ed;
+    border-bottom:1px solid #1830ed;
+    border-left:1px solid #1830ed;
+    border-right:1px solid #1830ed;
+    color:#ffffff;
+    font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .ml-lp-26 .button-block .btn-block {
+      width: 100%!important;
+    }
+  .ml-lp-26 .button2-block .btn-block {
+      width: 100%!important;
+    }
+  }
+</style><style type="text/css">
+
+  .container-fluid.ml-lp-32 {
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #ffffff;
+
+  }
+
+</style><style type="text/css">
+  .ml-lp-32 h1 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:30px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+    font-weight: normal; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-32 h2 {
+    font-family: 'Merriweather', serif;
+    color:#8e44ad;
+    font-size:48px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+    font-weight: bold; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-32 h3 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:20px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+  }
+  .ml-lp-32 blockquote {
+    font-family: 'Merriweather', serif;
+    color: #727373;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    padding-left: 1em;
+    border-left: 0.2em solid #727373;
+  }
+  .ml-lp-32 blockquote:before,
+  .ml-lp-32 blockquote:after {
+    content: '\201C';
+    font-family: 'Merriweather', serif;
+    color: #727373;
+  }
+  .ml-lp-32 blockquote:after {
+    content: '\201D';
+  }
+  .ml-lp-32 p,
+  .ml-lp-32 ul,
+  .ml-lp-32 ol {
+    font-family: 'Merriweather', serif;
+    color: #727373;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    line-height: 150%!important;
+  }
+  .ml-lp-32 p:last-child,
+  .ml-lp-32 ul:last-child,
+  .ml-lp-32 ol:last-child {
+    margin-bottom: 0;
+  }
+  .ml-lp-32 p a,
+  .ml-lp-32 ul a,
+  .ml-lp-32 ol a {
+    font-family: 'Merriweather', serif;
+    color: #727373;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .ml-lp-32 p,
+    .ml-lp-32 ul,
+    .ml-lp-32 ol {
+      font-size: 17px!important;
+    }
+    .ml-lp-32 h1 {
+      font-size: 28px!important;
+    }
+    .ml-lp-32 h2 {
+      font-size: 24px!important;
+    }
+    .ml-lp-32 h3 {
+      font-size: 20px!important;
+    }
+  }
+</style><style type="text/css">
+
+  .container-fluid.ml-lp-35 {
+
+    padding-bottom: 30px;
+    padding-top: 0px;
+    background-color: #ffffff;
+
+  }
+
+</style><style type="text/css">
+  .ml-lp-35 .social-icons {
+    margin: 0;
+    padding: 0;
+  }
+  .ml-lp-35 .social-icons li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .ml-lp-35 .social-icons li:last-child {
+    margin-right: 0;
+  }
+  @media (max-width: 768px) {
+    .ml-lp-35 .social-icons li img {
+      max-width:37px!important;
+      width:100%!important;
+    }
+  }
+</style><style type="text/css">
+                        .image-block-39 img {
+                          max-width: 100%;
+                        }
+                      </style><style type="text/css">
+
+  .container-fluid.ml-lp-38 {
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #ffffff;
+
+  }
+
+</style><style type="text/css">
+
+        .image-block-38 img {
+
+        max-width: 100%;
+
+        }
+
+      </style><style type="text/css">
+  .ml-lp-38 h1 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:30px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+    font-weight: normal; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-38 h2 {
+    font-family: 'Merriweather', serif;
+    color:#8e44ad;
+    font-size:48px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+    font-weight: bold; font-style: normal; text-decoration: none;;
+  }
+  .ml-lp-38 h3 {
+    font-family: 'Merriweather', serif;
+    color:#000000;
+    font-size:20px;
+    letter-spacing: 0px;
+    line-height: 125%!important;
+  }
+  .ml-lp-38 blockquote {
+    font-family: 'Merriweather', serif;
+    color: #727373;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    padding-left: 1em;
+    border-left: 0.2em solid #727373;
+  }
+  .ml-lp-38 blockquote:before,
+  .ml-lp-38 blockquote:after {
+    content: '\201C';
+    font-family: 'Merriweather', serif;
+    color: #727373;
+  }
+  .ml-lp-38 blockquote:after {
+    content: '\201D';
+  }
+  .ml-lp-38 p,
+  .ml-lp-38 ul,
+  .ml-lp-38 ol {
+    font-family: 'Merriweather', serif;
+    color: #727373;
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    line-height: 150%!important;
+  }
+  .ml-lp-38 p:last-child,
+  .ml-lp-38 ul:last-child,
+  .ml-lp-38 ol:last-child {
+    margin-bottom: 0;
+  }
+  .ml-lp-38 p a,
+  .ml-lp-38 ul a,
+  .ml-lp-38 ol a {
+    font-family: 'Merriweather', serif;
+    color: #727373;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .ml-lp-38 p,
+    .ml-lp-38 ul,
+    .ml-lp-38 ol {
+      font-size: 17px!important;
+    }
+    .ml-lp-38 h1 {
+      font-size: 28px!important;
+    }
+    .ml-lp-38 h2 {
+      font-size: 24px!important;
+    }
+    .ml-lp-38 h3 {
+      font-size: 20px!important;
+    }
+  }
+</style><style type="text/css">
+  .ml-lp-38 .button-block .btn-block {
+    width: auto;
+    display: inline-block;
+    font-family:'Merriweather', serif;
+    background-color:#8e44ad;
+    font-size:14px;
+    
+    
+    
+    
+    color:#ffffff;
+    border-radius:30px;
+    padding:13px 40px!important;
+  font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-38 .button-block .btn-block:hover,
+  .ml-lp-38 .button-block .btn-block:focus,
+  .ml-lp-38 .button-block .btn-block:active,
+  .ml-lp-38 .button-block .btn-block:active:hover {
+    background-color:#1830ed;
+    
+    
+    
+    
+    color:#ffffff;
+    font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-38 .button2-block .btn-block {
+    width: auto;
+    display: inline-block;
+    font-family:'Merriweather', serif;
+    background-color:#ffffff;
+    font-size:14px;
+    border-top:1px solid #2B44FF;
+    border-bottom:1px solid #2B44FF;
+    border-left:1px solid #2B44FF;
+    border-right:1px solid #2B44FF;
+    color:#1830ed;
+    border-radius:30px;
+    padding:13px 40px!important;
+    font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  .ml-lp-38 .button2-block .btn-block:hover,
+  .ml-lp-38 .button2-block .btn-block:focus,
+  .ml-lp-38 .button2-block .btn-block:active,
+  .ml-lp-38 .button2-block .btn-block:active:hover {
+    background-color:#1830ed;
+    border-top:1px solid #1830ed;
+    border-bottom:1px solid #1830ed;
+    border-left:1px solid #1830ed;
+    border-right:1px solid #1830ed;
+    color:#ffffff;
+    font-weight: bold; font-style: normal; text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .ml-lp-38 .button-block .btn-block {
+      width: 100%!important;
+    }
+  .ml-lp-38 .button2-block .btn-block {
+      width: 100%!important;
+    }
+  }
+</style><style type="text/css">
+
+    footer {
+
+    background-color: #8e44ad;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    }
+
+    .ml-lp-43 .row {
+                          -webkit-transition : all 0.3s ease-out;
+                          transition : all 0.3s ease-out;
+                        }
+    .ml-lp-43 .logo-footer img {
+
+    height: 15px;
+
+    }
+
+    .ml-lp-43 .footer-description p {
+
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+
+    }
+    .ml-lp-43 .footer-description p:last-child {
+
+                          margin-bottom: 0;
+
+                        }
+
+    .ml-lp-43 .footer-description p a {
+
+    font-family: 'Merriweather', serif;
+    color: #000000;
+    text-decoration: underline;
+
+    }
+
+    .ml-lp-43 .social-icons {
+                          margin: 0;
+                          padding: 0;
+                        }
+    .ml-lp-43 .social-icons li {
+                          list-style: none;
+                          display: inline-block;
+                          margin-right: 10px;
+                        }
+    .ml-lp-43 .social-icons li:last-child {
+                          margin-right: 0;
+                        }
+    @media (max-width: 768px) {
+      .ml-lp-43 .social-icons li img {
+    max-width:24px!important;
+    width:100%!important;
+    }
+    }
+  </style><style>
+
+  body {
+
+    background-color: #ffffff;
+    background-image: url(https://bucket.mlcdn.com/a/1332/1332954/images/e377109960eb8c50b1df9361d89c8ecbbf633645.jpeg);
+    background-size:  contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+  }
+
+  body ol ol {
+    list-style-type: lower-alpha;
+  }
+  body ol ol ol {
+    list-style-type: lower-roman;
+  }
+
+  .container.with-border {
+
+  border-left: 0px solid #cccccc;
+  border-right: 0px solid #cccccc;
+
+
+                        }
+
+  /* Input */
+
+  .form-group .form-control {
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #ffffff;
+    border: px solid #ffffff;
+    padding-top:px!important;
+    padding-bottom:px!important;
+    height: auto;
+  }
+
+  .form-group .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #666666;
+    opacity: 1; /* Firefox */
+  }
+  .form-group .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #666666;
+  }
+  .form-group .form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #666666;
+  }
+
+  /* Large gutters */
+
+  .container.with-large-gutters,
+  .container-fluid.with-large-gutters {
+
+    padding-left: 60px;
+    padding-right: 60px;
+
+  }
+
+  @media (max-width: 991.98px) {
+
+    .container.with-large-gutters,
+    .container-fluid.with-large-gutters {
+
+      padding-left: 30px;
+      padding-right: 30px;
+
+    }
+
+  }
+
+  @media (max-width: 575.98px) {
+
+    .container.with-large-gutters,
+    .container-fluid.with-large-gutters {
+
+      padding-left: 15px;
+      padding-right: 15px;
+
+    }
+
+  }
+
+  .container.container-large-gutter {
+
+    padding-right: 15px;
+    padding-left: 15px;
+
+  }
+
+  .container.with-large-gutters .card-body {
+
+    padding: 2.25rem;
+
+  }
+
+  .container.container-large-gutter .container {
+    padding-right: 30px;
+    padding-left: 30px;
+
+  }
+
+  .container .large-gutters {
+    margin-right: -30px;
+    margin-left: -30px;
+
+  }
+  .container .large-gutters .col,
+  .container .large-gutters [class*="col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .container .large-gutters .row {
+    margin-right: -30px;
+    margin-left: -30px;
+
+  }
+
+  .sections-repeaters .container {
+      padding: 0;
+  }
+
+  .sections-repeaters .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  /* End of Large gutters */
+
+  /* Mobile padding */
+
+  @media (max-width: 480px) {
+
+    .row-form .container {
+      padding: 0px!important;
+    }
+    .container .large-gutters,
+    .container .large-gutters .row {
+      margin-left: -15px!important;
+      margin-right: -15px!important;
+    }
+
+    .container .large-gutters .col,
+    .container .large-gutters [class*="col-"] {
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+    }
+
+    .card-body {
+      padding: 1rem!important;
+    }
+
+  }
+
+</style><style type="text/css">
+  #landing-0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+</style><script src="https://assets.mailerlite.com/js/universal.js" type="text/javascript"></script>
+
+<script>
+    window.ml = function () {
+        (window.ml.q = window.ml.q || []).push(arguments)
+    }
+    ml('account', 117294);
+    ml('initializePage', '70664563381503362');
+    ml('enablePopups', '')
+</script>
+
+
+</head>
+<body>
+
+
+
+
+
+
+<div class="container-fluid" id="landing-0">
+
+    
+  
+  <!-- Design -->
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+
+    
+      
+      
+      
+
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+      
+      
+    
+
+
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+    
+      
+      
+    
+
+    
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+
+      
+        
+        
+        
+        
+      
+    
+
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+        
+        
+        
+        
+      
+    
+
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+  
+
+
+
+
+
+
+  <!-- Notification -->
+  
+
+     <script type="text/javascript" move-to-head="">
+        function hideParent(parentKey){
+            localStorage.setItem(parentKey, 'false');
+
+            checkIfSticky( function(stickyNavbar, stickyNotification) {
+              stickyNavbar.style.top = 0;
+            })
+        }
+
+        $(document).ready(function(){
+            var showNotification = localStorage.getItem('showCookieNotificationBar');
+            if (showNotification === 'false'){
+                $( ".ml-visible-only-once" ).css( "display", "none" );
+            }
+
+            checkIfSticky( function(stickyNavbar, stickyNotification) {
+              var notificationHeight = stickyNotification.offsetHeight;
+              stickyNavbar.style.top = notificationHeight + 'px';
+            })
+        })
+
+        function checkIfSticky (callback) {
+            var stickyNavbar = document.querySelector('header.sticky-top');
+            var stickyNotification = document.querySelector('#notification.sticky-top');
+            if (stickyNavbar && stickyNotification) {
+              callback(stickyNavbar, stickyNotification);
+            }
+        }
+    </script>
+
+
+  <!-- Header -->
+  
+
+  <header class="sticky-top justify-content-center">
+
+    <!-- Skip to content link-->
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- End of skip to content link-->
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+        
+      
+
+      
+        
+      
+
+      
+        
+        
+        
+        
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        
+        
+          
+          
+          
+          
+        
+      
+
+      
+        
+
+          
+          
+          
+          
+          
+          
+        
+        
+          
+          
+          
+        
+      
+
+      
+        
+        
+        
+      
+
+    
+
+    <div class="container   ml-lp-2">
+      <div class="row justify-content-center">
+        <div class=" col-12">
+
+          <nav class="navbar navbar-light navbar-expand-md mr-auto ml-auto
+            
+            
+            ">
+
+            
+
+            <a class="navbar-brand mr-5" href="#">Latin American Women's Aid</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageNavbar" aria-controls="pageNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="pageNavbar">
+
+              <ul class="navbar-nav mt-3 mt-md-0 text-center">
+                
+              </ul>
+
+              <a role="button" class="btn btn-block nav-button d-block d-md-none mt-3" href="https://lawadv.org.uk/get-involved/" target="_blank">Back to Website</a>
+
+            </div>
+
+            <a role="button" class="btn btn-block d-none d-md-block ml-5" href="https://lawadv.org.uk/get-involved/" target="_blank">Back to Website</a>
+
+            
+
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <style xp-if="variable.headerBackgroundType.value === 'scroll' &amp;&amp; variable.settings.value.indexOf('sticky') !== -1">
+
+      header.active {
+        background: #ffffff;
+      }
+
+    </style>
+
+    
+  </header>
+
+
+
+
+<script>
+      function toggleDropdown (e) {
+      var _d = $(e.target).closest('.dropdown-auto'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function () {
+        var shouldOpen = e.type !== 'click' && e.type === 'mouseover';
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 100 : 0);
+    }
+    $('body')
+      .on('mouseenter mouseleave','.dropdown-auto',toggleDropdown)
+      .on('click', '.dropdown-auto .dropdown-menu a', toggleDropdown);
+
+  </script>
+
+<script>
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 100) {
+      $("header").addClass("active");
+    } else {
+      $("header").removeClass("active");
+    }
+  });
+
+  $('.nav-link, .nav-button').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+  });
+</script>
+
+
+  <div class="row-form">
+    <main id="main"></main>
+
+    <div class="container-fluid ml-lp-5 " data-aos="">
+  <div class="container with-large-gutters">
+
+    
+
+      
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      <div class="row large-gutters justify-content-center">
+
+        <div class="col col-sm-12 text-left">
+          <img src="https://storage.mlcdn.com/account_image/117294/nezkZYND0RQS4Xj1Tf1Qp9zZuQqfFIh0coOi1Eky.png" border="0" alt="" class="img-fluid d-inline" width="161" style="display: block;">
+
+        </div>
+      </div>
+
+    
+
+  </div>
+</div>
+
+
+
+
+  
+    <div class="container-fluid ml-lp-7 " data-aos="">
+  <div class="container with-large-gutters">
+
+    
+
+      
+
+        
+          
+          
+          
+          
+        
+
+        
+          
+          
+          
+          
+        
+
+      
+
+      
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+      
+
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+
+
+
+      
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+      
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+      
+  
+    
+    
+    
+    
+  
+  
+    
+    
+  
+
+
+
+      
+
+      
+
+      
+      
+
+      
+        
+        
+      
+
+      <div class="row justify-content-center">
+        <div class="col col-lg-9">
+          <div class="  ">
+            <div class="">
+              <div class="ml-subscribe-form row large-gutters align-items-center" id="mlb2-1995669-7">
+
+                <!-- Media -->
+                <div class="ml-block-form col-12 col-md-5 order-first mb-4 mb-md-0">
+
+                  <!-- Image -->
+                  <div class="image-block-7">
+                    
+                      <div class="image-block-8 text-center w-100">
+                        <img src="https://local.mlcdn.com/a/0/1/images/394569c71cce3bda5541602fb879deee7b6f3a2f.png" border="0" alt="" class="img-fluid d-inline" width="315" style="display: block;">
+                        
+                      </div>
+                      
+                    
+                  </div>
+                  <!-- /Image -->
+
+                  <!-- Video -->
+                  
+                  
+                  <!-- /Video -->
+
+                </div>
+                <!-- /Media -->
+
+                <!-- Content -->
+                <div class="ml-block-form col-12 col-md-7">
+
+                  <!-- Text -->
+                  <div class="row mb-4">
+
+                    <div class="col">
+
+                      
+                        
+                        
+                        
+                        <h2>Subscribe to our Newsletter to access the latest information about our work.</h2>
+                      
+
+                    </div>
+                  </div>
+                  <!-- /Text -->
+
+                  <!-- Form -->
+                  
+
+  
+    
+    
+    
+    
+
+    
+    
+    
+  
+
+  
+    
+    
+    
+    
+  
+
+  
+    
+    
+    
+    
+  
+
+  
+    
+    
+    
+    
+  
+
+  
+    
+    
+    
+    
+  
+
+  
+    
+    
+    
+    
+    
+  
+
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+      
+      
+      
+      
+    
+  
+
+
+
+
+<div xp-if="variable.formPreview.value == 'form'">
+  <form class="mb-0" action="https://assets.mailerlite.com/jsonp/117294/pages/70664563381503362/subscribe" data-webform-type="landing" data-code="" data-redirect="" data-redirect-target="" method="POST">
+
+    <!-- Sign-up Form Inputs -->
+
+    <!-- If one input -->
+    
+
+    <!-- If more than one input -->
+    <div class="row">
+      <div class="col">
+        <div>
+          <div class="form-group ml-field-email ml-validate-email ml-validate-required mb-2">
+            <label class="field-title">
+              Email
+            </label>
+
+            <!-- input -->
+            <input aria-required="true" aria-label="email" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="" autocomplete="email">
+            <!-- /input -->
+
+            <!-- textarea -->
+            
+            <!-- /textarea -->
+
+            <!-- select -->
+            
+            <!-- /select -->
+
+            <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+            <!-- radio -->
+            
+            <!-- /radio -->
+
+            <!-- countries -->
+            
+            <!-- /countries -->
+          </div>
+        </div><div>
+          <div class="form-group ml-field-name mb-0">
+            <label class="field-title">
+              Name
+            </label>
+
+            <!-- input -->
+            <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="" autocomplete="name">
+            <!-- /input -->
+
+            <!-- textarea -->
+            
+            <!-- /textarea -->
+
+            <!-- select -->
+            
+            <!-- /select -->
+
+            <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+            <!-- radio -->
+            
+            <!-- /radio -->
+
+            <!-- countries -->
+            
+            <!-- /countries -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Sign-up Form Inputs -->
+
+    <!-- Privacy policy -->
+    
+    <!-- /Privacy policy -->
+
+    <!-- GDPR -->
+    <div class="row mt-4">
+      <div class="col">
+
+        <div class="ml-form-embedPermissions form-group mb-0">
+          <div class="ml-form-embedPermissionsContent form-group-gdpr">
+
+            
+              
+                
+              
+              <h4>
+                Marketing Permissions
+              </h4>
+              <p>Click &lsquo;Yes&rsquo; to become part of our community to end gender-based violence. You will hear from us from time to time about our latest campaigns, appeals, how you can help, and the impact of your support. Your tick means we can continue to talk to you and raise vital funds. Without it, we can&rsquo;t contact you by email about our campaigns and appeals.</p>
+
+              <div class="ml-form-embedPermissionsOptions mt-3">
+
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="form-check-input custom-control-input" name="gdpr[]" value="Yes" id="gdpr_13_0">
+                    <label class="form-check-label custom-control-label" for="gdpr_13_0">
+                      Yes
+                      <div class="description"></div>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- /GDPR -->
+
+    <!-- Interest Groups -->
+    
+    <!-- /Interest Groups -->
+
+    <!-- Confirmation -->
+    
+    <!-- /Confirmation -->
+
+    <!-- reCAPTCHA -->
+    
+    <!-- /reCAPTCHA -->
+
+    <!-- Submit button -->
+    <div class="row mt-4">
+      <div class="col">
+        <div class="form-group button-block mb-0">
+          <button class="btn btn-block primary" type="submit">
+            Join
+          </button>
+          <button style="display: none; border-top-right-radius: 30px; border-bottom-right-radius: 30px;" class="btn btn-block loading" type="button" disabled>
+            <div class="spinner-border" style="width: 1.25rem; height: 1.25rem;" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- /Submit button -->
+
+    <!-- Hidden segmentation-->
+    
+    <!-- /Hidden segmentation-->
+    <input type="hidden" name="ml-submit" value="1">
+  </form>
+</div>
+
+
+
+                  <!-- /Form -->
+
+                </div>
+                <!-- /Content -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+
+    
+
+  </div>
+</div>
+
+  
+    <div class="container-fluid ml-lp-20 " data-aos="">
+  <div class="container with-large-gutters">
+
+    
+      
+      
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+      
+
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+
+
+
+      
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+  
+  
+    
+    
+  
+
+
+
+
+
+      
+  
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+  
+  
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+  
+
+
+
+      
+      
+      
+
+      
+        
+        
+      
+
+      <div class="row justify-content-center">
+        <div class="col col-sm-12">
+          <div class="  ">
+            <div class="">
+              <div class="row large-gutters align-items-center">
+
+                <!-- Media -->
+                <div class="col-12 col-md-6 order-md-last order-first image-block-20 mb-4 mb-md-0">
+
+                  <!-- Image -->
+                  <div>
+                    
+                      <div class="image-block-21 text-center w-100">
+                        <img src="https://storage.mlcdn.com/account_image/117294/meLdSKQ60CMQpstYOIYrXdIwxYBA24gZYZPaqKjE.png" border="0" alt="" class="img-fluid d-inline" width="940" style="display: block;">
+                        
+                      </div>
+                      
+                    
+                  </div>
+                  <!-- /Image -->
+                  <!-- Video -->
+                  
+                  
+                  <!-- Video -->
+
+                </div>
+                <!-- /Media -->
+
+                <!-- Content -->
+                <div class="col-12 col-md-6">
+
+                  <!-- Text -->
+                  <div class="row">
+                    <div class="col" aria-label="content" role="contentinfo">
+
+                      
+                        
+                        
+                        
+
+                        <h2><strong>Violence Against Women and Girls.</strong></h2>
+<h1>Nonprofit Organization</h1>
+<p>For more than 30 years, LAWA has worked with Latin American and other migrant women to live without the threat of domestic violence.</p>
+<p>Whether it is providing a safe refuge, a therapy session, providing free expert advice, or befriending on the phone - we are here to support women and children escaping abusive environments.</p>
+                      
+
+                    </div>
+                  </div>
+
+                  <!-- Button -->
+                  
+
+                </div>
+                <!-- /Content -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+      
+
+
+
+    
+
+  </div>
+</div>
+
+
+  
+    <div class="container-fluid ml-lp-26 " data-aos="">
+  <div class="container with-large-gutters">
+
+    
+      
+      
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+      
+
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+
+
+
+      
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+  
+  
+    
+    
+  
+
+
+
+
+
+      
+  
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+  
+  
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+  
+
+
+
+      
+      
+
+      <div class="row justify-content-center">
+        <div class="col col-md-9 col-lg-7">
+          <div class="  ">
+            <div class="">
+              <!-- Media -->
+
+<!-- /Media -->
+
+<!-- Text -->
+<div class="row mb-4">
+  <div class="col">
+    
+      
+      
+      
+
+      <h2 style="text-align: center;"><strong>Don<span style="color: rgb(142, 68, 173);"></span>ate</strong></h2>
+<h1 style="text-align: center;">Today, you can support the lives of vulnerable women and girls, fleeing abusive environments.&nbsp;</h1>
+<p style="text-align: center;">With your help, you can make our work happen.&nbsp;</p>
+    
+  </div>
+</div>
+<!-- /Text -->
+
+<!-- Button -->
+<div class="row">
+  <div class="col">
+    
+            <div class="buttons btn-group d-flex flex-row justify-content-center">
+
+        <div class="button-block ">
+          
+          <a class="btn btn-block" href="https://lawadv.enthuse.com/LAWA" target="_self">Donate Now</a>
+        </div>
+        
+
+      </div>
+    
+  </div>
+</div>
+<!-- /Button -->
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+  </div>
+</div>
+
+
+  
+    <div class="container-fluid ml-lp-32 " data-aos="">
+  <div class="container with-large-gutters">
+
+    
+
+      
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+      
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+  
+  
+    
+    
+  
+
+
+
+
+
+
+      <div class="row large-gutters justify-content-center">
+        <div class="col col-lg-9">
+
+          
+            
+            
+            
+
+            <p style="text-align: center;">You can also support us by following and sharing our journey on social media:</p>
+          
+
+        </div>
+      </div>
+
+      
+
+
+    
+
+  </div>
+</div>
+
+
+  
+    <div class="container-fluid ml-lp-35" data-aos="">
+  <div class="container with-large-gutters">
+
+    
+
+      
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+
+      <div class="row large-gutters justify-content-center">
+        <div class="col col-sm-12">
+
+          
+
+  
+  
+  
+  
+
+
+
+
+
+<ul class="social-icons" style="text-align: center;">
+  <li>
+    <a href="https://www.facebook.com/LatinAmericanWomensAid/" target="_blank">
+      <img width="37" alt="facebook" src="https://cdn.mailerlite.com/images/icons/default/round/color/facebook.png" style="display: block;" border="0">
+    </a>
+  </li><li>
+    <a href="https://www.instagram.com/lawalondon/" target="_blank">
+      <img width="37" alt="instagram" src="https://cdn.mailerlite.com/images/icons/default/round/color/instagram.png" style="display: block;" border="0">
+    </a>
+  </li>
+</ul>
+
+
+
+
+        </div>
+      </div>
+
+    
+
+  </div>
+</div>
+
+  
+
+
+
+
+
+  </div>
+
+  <div class="row-success" style="display: none" data-autorefresh="-1">
+		<template class="success-template">
+    
+    <div class="container-fluid ml-lp-38 min-vh-100 d-flex flex-column justify-content-center" data-aos="">
+  <div class="container with-large-gutters">
+
+    
+      
+      
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+      
+
+  
+
+  
+
+  
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+
+
+
+      
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+
+
+
+  
+    
+    
+    
+    
+  
+  
+    
+    
+  
+
+
+
+
+
+      
+  
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+  
+  
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+      
+      
+      
+      
+    
+
+  
+
+
+
+      
+      
+      
+
+      
+        
+        
+      
+
+      <div class="row justify-content-center">
+        <div class="col col-sm-12">
+          <div class="  ">
+            <div class="">
+              <div class="row large-gutters align-items-center">
+
+                <!-- Media -->
+                <div class="col-12 col-md-5 order-first image-block-38 mb-4 mb-md-0">
+
+                  <!-- Image -->
+                  <div>
+                    
+                      <div class="image-block-39 text-center w-100">
+                        <a href="https://lawadv.org.uk/" target="_self">
+                            <img src="https://storage.mlcdn.com/account_image/117294/EHA4TjfVHfCH4C2mNkbKBsxS7l9dBlfWMN8LC8FX.png" border="0" alt="" class="img-fluid d-inline" width="300" style="display: block;">
+                          </a>
+                        
+                      </div>
+                      
+                    
+                  </div>
+                  <!-- /Image -->
+                  <!-- Video -->
+                  
+                  
+                  <!-- Video -->
+
+                </div>
+                <!-- /Media -->
+
+                <!-- Content -->
+                <div class="col-12 col-md-7">
+
+                  <!-- Text -->
+                  <div class="row">
+                    <div class="col" aria-label="content" role="contentinfo">
+
+                      
+                        
+                        
+                        
+
+                        <h2><strong>Thank You</strong></h2>
+<p>Your support means a lot!<br></p>
+
+                      
+
+                    </div>
+                  </div>
+
+                  <!-- Button -->
+                  <div class="row mt-4">
+                    <div class="col">
+                      
+                                                <div class="buttons btn-group d-flex flex-row justify-content-start">
+
+                          
+                          
+
+                        </div>
+                      
+                    </div>
+                  </div>
+
+                </div>
+                <!-- /Content -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+      
+
+
+
+    
+
+  </div>
+</div>
+
+
+  
+
+
+
+
+    </template>
+  </div>
+
+  <!-- Footer -->
+  
+
+  
+  
+
+  
+  
+  
+
+  
+
+    
+
+    
+    
+
+    
+
+    
+      
+      
+    
+
+    
+      
+      
+      
+    
+
+    
+      
+      
+      
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+    
+
+  
+
+  <footer class="ml-lp-43 pl-3 pr-3">
+
+    <div class="container-fluid  ml-lp-43">
+
+      
+
+      <div class="row justify-content-center">
+        <div class=" col-12 d-flex flex-column flex-md-row">
+
+          <div class="order-2 order-md-1">
+            <div class="footer-description d-flex flex-column align-items-center align-items-md-start">
+              <p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>
+
+            </div>
+          </div>
+
+          <div class="mb-3 mb-md-0 order-1 order-md-3 ml-md-auto">
+            <ul class="social-icons text-center">
+              
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  
+
+      <script>
+ 
+
+  var $ = window.ml_jQuery || window.jQuery;
+
+ document.onkeydown = function(evt) {
+   evt = evt || window.event;
+   var isEscape = false;
+   if ('key' in evt) {
+     isEscape = evt.key == 'Escape';
+   } else {
+     isEscape = evt.keyCode == 27;
+   }
+
+   if (isEscape) {
+     close();
+   }
+ };
+
+ function close() {
+        window.parent.postMessage('ml-accounts---webforms-1995669--hide', '*');
+ };
+
+ (function ($, window) {
+   function sendHeightToParent(selector, sendSize) {
+     var formHeight = $(selector).outerHeight();
+
+     window.parent.postMessage('ml-accounts---webforms-1995669--setHeight-' + formHeight + 'px', '*');
+
+     if (sendSize) {
+
+       var formWidth = $(selector).outerWidth();
+       window.parent.postMessage('ml-accounts---webforms-1995669--setSize-' + formHeight + 'px' + '-' + formWidth + 'px', '*');
+     }
+   }
+
+   var resizeTimer;
+   var formTypes = [
+     '.mailerlite-trigger-sendHeightToParent',
+
+     // old classes that triggers sendHeight too
+     '.mailerlite-popup',
+     '.mailerlite-slidebox',
+     '.mailerlite-form-bar',
+     '.mailerlite-fullscreen'
+   ];
+
+   function resizeFunction(formType, sendSize) {
+     sendHeightToParent(formType, sendSize);
+   }
+
+   formTypes.forEach(function (formType) {
+     if (window.sendHeightToParentTriggered) {
+       return;
+     }
+
+     if ($(formType).length) {
+       setTimeout(resizeFunction(formType), 200);
+
+       $(window).resize(function() {
+         clearTimeout(resizeTimer);
+         resizeTimer = setTimeout(resizeFunction(formType, true), 50);
+       });
+
+       // if height is already triggered - do not trigger again
+       window.sendHeightToParentTriggered = true;
+     }
+   })
+ })($, window);
+
+    function ml_webform_success_1995669 () {
+     $('.row-form').hide();
+     $('.row-success').show();
+     $(window).scrollTop(0);
+
+     
+     if ($('.row-success').data('autorefresh')) {
+       var autorefresh = Number($('.row-success').data('autorefresh'));
+       if (autorefresh && autorefresh > 0) {
+         setTimeout(function(){
+           window.location.reload();
+         }, autorefresh * 1000);
+       }
+     }
+
+     if ($('.row-success').find('.success-template').length && $('.success-template').html()) {
+       $('.row-success').replaceWith($('.success-template').html());
+     }
+   }
+ 
+    
+</script>
+
+      
+
+    
+                
+      <script>
+        function debounce(func, wait, immediate) {
+          var timeout;
+          return function () {
+            var context = this, args = arguments;
+            var later = function () {
+              timeout = null;
+              if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+
+            if (callNow) func.apply(context, args);
+          };
+        }
+
+        var heatmap_submit_url = '';
+
+        // continue only if heatmap_submit_url is valid
+        if (/^https?:\/\/.*$/i.test(heatmap_submit_url)) {
+          var heatmap_clicks = [];
+
+          var addData = function (targetTagName, targetIndex, x, y) {
+            var width = $(window).width();
+
+            var clickObject = {
+              targetTagName: targetTagName,
+              targetIndex: targetIndex,
+              x: x,
+              y: y,
+              value: 1,
+              screenWidth: width,
+              webformId: '1995669',
+              webformCode: '',
+              blog_post_id: '',
+              blog_category_id: ''
+            };
+
+            heatmap_clicks.push(clickObject);
+
+            window.debounce_function = window.debounce_function || debounce(function () {
+              sendHeatmapData();
+            }, 3000);
+
+            window.debounce_function();
+          };
+
+          var sendHeatmapData = function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', heatmap_submit_url, true);
+            xhr.send(JSON.stringify(heatmap_clicks));
+
+            heatmap_clicks = [];
+          };
+
+          $(document).on("click tap", function (event) {
+            var target = event.target;
+
+            // if click is made on carousel, send only clicks from 1st slide
+            var clickedInsideCarousel = target.closest(".ml-carousel-item");
+            var firstSlide = false;
+            if (clickedInsideCarousel) {
+              var elementClasses = clickedInsideCarousel.classList;
+
+              for (var i = 0; i < elementClasses.length; i++) {
+                if ( elementClasses[i] === 'ml-carousel-item-0') {
+                  firstSlide = true;
+                  break;
+                }
+              }
+            }
+            if (clickedInsideCarousel && !firstSlide) {
+              return;
+            }
+
+            var targetTagName = target.tagName;
+            var targetIndex;
+            var elements = document.getElementsByTagName(targetTagName);
+            var x, y;
+
+            Array.prototype.forEach.call(elements, function (element, key) {
+              if (element === target) {
+                targetIndex = key;
+              }
+            });
+
+            x = event.offsetX / target.offsetWidth * 100;
+            y = event.offsetY / target.offsetHeight * 100;
+
+            addData(targetTagName, targetIndex, x, y);
+          });
+
+          function getElementDisplayType(element) {
+            if (!element) {
+              return false;
+            }
+
+            var cStyle = element.currentStyle || window.getComputedStyle(element, "");
+            return cStyle.display;
+          }
+
+          window.onbeforeunload = function () {
+            if (heatmap_clicks.length) {
+              sendHeatmapData();
+            }
+          }
+        }
+      </script>
+    
+  
+
+  
+  <script>
+      (function(window) {
+  window.addEventListener("message", receiveMessage, false);
+
+  function receiveMessage(event) {
+      if (event && event.data && typeof event.data === 'string') {
+        var message_parts = event.data.split('-');
+        if (message_parts.length > 1) {
+            if (message_parts[0] == 'mlWebformSubmitSuccess') {
+                var id = message_parts[1];
+                var cookieName = 'mailerlite:webform:submited:' + id
+                var cookieValue = (new Date()).getTime();
+                document.cookie = cookieName + "=" + cookieValue + "; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+            } else if (message_parts[0] == 'mlWebformRedirect') {
+                var target = message_parts[message_parts.length - 1];
+                var targets = ['_blank', '_self', '_parent', '_top'];
+                var redirect = message_parts.slice(1, message_parts.length - 1).join('-');
+                if (targets.indexOf(target) < 0) {
+                    redirect = message_parts.slice(1).join('-');
+                    target = '_blank';
+                }
+
+                var redirectUrl = new URL(decodeURIComponent(redirect));
+                if (redirectUrl && redirectUrl.protocol != 'javascript:') {
+
+                    window.open(decodeURIComponent(redirect), target);
+                }
+            }
+        }
+      }
+  }
+})(window);
+  </script>
+
+  
+
+
+<div class="ml-hide-branding">
+  <div class="container py-4">
+    <a href="https://www.mailerlite.com" target="_blank" class="d-table mx-auto">
+      <img src="https://assets.mlcdn.com/ml/logo/created-with-mailerlite.png" width="100" alt="Created with MailerLite" style="display: block;" border="0">
+    </a>
+  </div>
+</div>
+
+
+</div>
+
+
+
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v491724307ca3b85c1c754857e93994e5" type="text/javascript"></script>
+
+  
+  
+
+
+</body>
+
+</html>
